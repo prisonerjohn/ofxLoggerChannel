@@ -17,6 +17,9 @@ void ofApp::setup()
     ofBackground(ofColor::blueSteel);
     
     screenLoggerChannel = shared_ptr<ofxScreenLoggerChannel>(new ofxScreenLoggerChannel());
+//    screenLoggerChannel->setBackgroundColor(ofColor(122, 37, 30, 217));
+//    screenLoggerChannel->setTextColor(ofColor::white);
+//    screenLoggerChannel->setPrefixTimestamp(false);
     ofSetLoggerChannel(screenLoggerChannel);
     
     ofLogNotice("setup", "Screen logger set.");
