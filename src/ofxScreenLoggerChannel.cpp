@@ -28,6 +28,10 @@ ofxScreenLoggerChannel::ofxScreenLoggerChannel()
 ofxScreenLoggerChannel::~ofxScreenLoggerChannel()
 {
     clear();
+
+    ofRemoveListener(ofEvents().mouseDragged, this, &ofxScreenLoggerChannel::mouseDragged);
+    ofRemoveListener(ofEvents().mouseMoved, this, &ofxScreenLoggerChannel::mouseMoved);
+    ofRemoveListener(ofEvents().mouseScrolled, this, &ofxScreenLoggerChannel::mouseScrolled);
 }
 
 //--------------------------------------------------------------
