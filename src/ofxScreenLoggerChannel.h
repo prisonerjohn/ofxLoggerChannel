@@ -23,7 +23,7 @@ public:
     void clear();
     void draw() const;
     
-    void setMaxBufferCount(int maxBufferCount);
+    void setMaxBufferCount(int maxBufferCount);  // 0 for no limit.
     int getMaxBufferCount() const;
     
     void setDrawBounds(const ofRectangle& drawBounds);

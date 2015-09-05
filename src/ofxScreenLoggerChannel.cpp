@@ -55,7 +55,7 @@ void ofxScreenLoggerChannel::log(ofLogLevel level, const string & module, const 
     if (_scrollOffset > 0) ++_scrollOffset;
     
     // Erase older messages.
-    while (_buffer.size() > _maxBufferCount) {
+    while (_maxBufferCount > 0 && _buffer.size() > _maxBufferCount) {
         _buffer.pop_back();
     }
 }
