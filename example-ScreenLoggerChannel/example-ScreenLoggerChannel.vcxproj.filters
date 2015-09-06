@@ -1,39 +1,45 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-	<ItemGroup>
-		<ClCompile Include="src\ofApp.cpp">
-			<Filter>src</Filter>
-		</ClCompile>
-		<ClCompile Include="src\main.cpp">
-			<Filter>src</Filter>
-		</ClCompile>
-		<ClCompile Include="..\..\..\addons\ofxLoggerChannel\src\ofxScreenLoggerChannel.cpp">
-			<Filter>addons\ofxLoggerChannel\src</Filter>
-		</ClCompile>
-	</ItemGroup>
-	<ItemGroup>
-		<Filter Include="src">
-			<UniqueIdentifier>{d8376475-7454-4a24-b08a-aac121d3ad6f}</UniqueIdentifier>
-		</Filter>
-		<Filter Include="addons">
-			<UniqueIdentifier>{71834F65-F3A9-211E-73B8-DC85}</UniqueIdentifier>
-		</Filter>
-		<Filter Include="addons\ofxLoggerChannel">
-			<UniqueIdentifier>{A7EF2107-41B6-F668-A7DB-961B}</UniqueIdentifier>
-		</Filter>
-		<Filter Include="addons\ofxLoggerChannel\src">
-			<UniqueIdentifier>{E74668CB-7FBC-5510-7E99-F6B1}</UniqueIdentifier>
-		</Filter>
-	</ItemGroup>
-	<ItemGroup>
-		<ClInclude Include="src\ofApp.h">
-			<Filter>src</Filter>
-		</ClInclude>
-		<ClInclude Include="..\..\..\addons\ofxLoggerChannel\src\ofxScreenLoggerChannel.h">
-			<Filter>addons\ofxLoggerChannel\src</Filter>
-		</ClInclude>
-	</ItemGroup>
-	<ItemGroup>
-		<ResourceCompile Include="icon.rc" />
-	</ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\ofApp.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxLoggerChannel\src\ofxScreenLoggerChannel.cpp">
+      <Filter>addons\ofxLoggerChannel\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ofxMultiLoggerChannel.cpp">
+      <Filter>addons\ofxLoggerChannel\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{d8376475-7454-4a24-b08a-aac121d3ad6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons">
+      <UniqueIdentifier>{71834F65-F3A9-211E-73B8-DC85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxLoggerChannel">
+      <UniqueIdentifier>{A7EF2107-41B6-F668-A7DB-961B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxLoggerChannel\src">
+      <UniqueIdentifier>{E74668CB-7FBC-5510-7E99-F6B1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\ofApp.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxLoggerChannel\src\ofxScreenLoggerChannel.h">
+      <Filter>addons\ofxLoggerChannel\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ofxMultiLoggerChannel.h">
+      <Filter>addons\ofxLoggerChannel\src</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="icon.rc" />
+  </ItemGroup>
 </Project>

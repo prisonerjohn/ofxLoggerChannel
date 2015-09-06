@@ -1,6 +1,6 @@
 //
 //  ofxScreenLoggerChannel.cpp
-//  Desktop
+//  ofxLoggerChannel
 //
 //  Created by Elias Zananiri on 2015-08-02.
 //
