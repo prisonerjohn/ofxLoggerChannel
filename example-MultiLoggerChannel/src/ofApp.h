@@ -1,0 +1,30 @@
+//
+//  ofApp.h
+//  example-MultiLoggerChannel
+//
+//  Created by Elias Zananiri on 2015-08-02.
+//
+//
+
+#pragma once
+
+#include "ofMain.h"
+#include "ofxMultiLoggerChannel.h"
+#include "ofxScreenLoggerChannel.h"
+
+class ofApp
+: public ofBaseApp
+{
+public:
+    void setup();
+    void update();
+    void draw();
+        
+private:
+    shared_ptr<ofxMultiLoggerChannel> multiLoggerChannel;
+    shared_ptr<ofxScreenLoggerChannel> screenLoggerChannel;
+    
+    int frameNum;
+    int numTicks;
+    float lineX;
+};
