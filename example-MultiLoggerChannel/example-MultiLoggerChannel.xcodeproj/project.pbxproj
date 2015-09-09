@@ -10,7 +10,7 @@
 		6443523C1B6ED90700C76823 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 644352391B6ED90700C76823 /* main.cpp */; };
 		6443523D1B6ED90700C76823 /* ofApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6443523A1B6ED90700C76823 /* ofApp.cpp */; };
 		644352481B6ED9A000C76823 /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 644352441B6ED92C00C76823 /* openFrameworksDebug.a */; };
-		645A28C91BA09C8700AF6ACA /* ofxMultiLoggerChannel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 645A28C71BA09C8700AF6ACA /* ofxMultiLoggerChannel.cpp */; };
+		645A28C51BA09C5800AF6ACA /* ofxMultiLoggerChannel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 645A28C31BA09C5800AF6ACA /* ofxMultiLoggerChannel.cpp */; };
 		6470BE3E1B6EDA7D008C52C5 /* ofxScreenLoggerChannel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6470BE391B6EDA7D008C52C5 /* ofxScreenLoggerChannel.cpp */; };
 /* End PBXBuildFile section */
 
@@ -49,11 +49,11 @@
 		6443523B1B6ED90700C76823 /* ofApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofApp.h; sourceTree = "<group>"; };
 		6443523F1B6ED92C00C76823 /* openFrameworksLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openFrameworksLib.xcodeproj; path = ../../../libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj; sourceTree = "<group>"; };
 		644352451B6ED93E00C76823 /* CoreOF.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = CoreOF.xcconfig; path = ../../../libs/openFrameworksCompiled/project/osx/CoreOF.xcconfig; sourceTree = "<group>"; };
-		645A28C71BA09C8700AF6ACA /* ofxMultiLoggerChannel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxMultiLoggerChannel.cpp; sourceTree = "<group>"; };
-		645A28C81BA09C8700AF6ACA /* ofxMultiLoggerChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxMultiLoggerChannel.h; sourceTree = "<group>"; };
+		645A28C31BA09C5800AF6ACA /* ofxMultiLoggerChannel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxMultiLoggerChannel.cpp; sourceTree = "<group>"; };
+		645A28C41BA09C5800AF6ACA /* ofxMultiLoggerChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxMultiLoggerChannel.h; sourceTree = "<group>"; };
 		6470BE391B6EDA7D008C52C5 /* ofxScreenLoggerChannel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxScreenLoggerChannel.cpp; sourceTree = "<group>"; };
 		6470BE3A1B6EDA7D008C52C5 /* ofxScreenLoggerChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxScreenLoggerChannel.h; sourceTree = "<group>"; };
-		E4B69B5B0A3A1756003C02F2 /* example-ScreenLoggerChannel-Debug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "example-ScreenLoggerChannel-Debug.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4B69B5B0A3A1756003C02F2 /* example-MultiLoggerChannel-Debug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "example-MultiLoggerChannel-Debug.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4B6FCAD0C3E899E008CF71C /* openFrameworks-Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = "openFrameworks-Info.plist"; sourceTree = "<group>"; };
 		E4EB6923138AFD0F00A09F29 /* Project.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -90,8 +90,8 @@
 		6470BE381B6EDA7D008C52C5 /* src */ = {
 			isa = PBXGroup;
 			children = (
-				645A28C71BA09C8700AF6ACA /* ofxMultiLoggerChannel.cpp */,
-				645A28C81BA09C8700AF6ACA /* ofxMultiLoggerChannel.h */,
+				645A28C31BA09C5800AF6ACA /* ofxMultiLoggerChannel.cpp */,
+				645A28C41BA09C5800AF6ACA /* ofxMultiLoggerChannel.h */,
 				6470BE391B6EDA7D008C52C5 /* ofxScreenLoggerChannel.cpp */,
 				6470BE3A1B6EDA7D008C52C5 /* ofxScreenLoggerChannel.h */,
 			);
@@ -114,7 +114,7 @@
 				E4B69E1C0A3A1BDC003C02F2 /* src */,
 				E4EEC9E9138DF44700A80321 /* openFrameworks */,
 				BB4B014C10F69532006C3DED /* addons */,
-				E4B69B5B0A3A1756003C02F2 /* example-ScreenLoggerChannel-Debug.app */,
+				E4B69B5B0A3A1756003C02F2 /* example-MultiLoggerChannel-Debug.app */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,9 +140,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E4B69B5A0A3A1756003C02F2 /* example-ScreenLoggerChannel */ = {
+		E4B69B5A0A3A1756003C02F2 /* example-MultiLoggerChannel */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E4B69B5F0A3A1757003C02F2 /* Build configuration list for PBXNativeTarget "example-ScreenLoggerChannel" */;
+			buildConfigurationList = E4B69B5F0A3A1757003C02F2 /* Build configuration list for PBXNativeTarget "example-MultiLoggerChannel" */;
 			buildPhases = (
 				E4B69B580A3A1756003C02F2 /* Sources */,
 				E4B69B590A3A1756003C02F2 /* Frameworks */,
@@ -154,9 +154,9 @@
 			dependencies = (
 				644352471B6ED99C00C76823 /* PBXTargetDependency */,
 			);
-			name = "example-ScreenLoggerChannel";
+			name = "example-MultiLoggerChannel";
 			productName = myOFApp;
-			productReference = E4B69B5B0A3A1756003C02F2 /* example-ScreenLoggerChannel-Debug.app */;
+			productReference = E4B69B5B0A3A1756003C02F2 /* example-MultiLoggerChannel-Debug.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -167,7 +167,7 @@
 			attributes = {
 				LastUpgradeCheck = 0600;
 			};
-			buildConfigurationList = E4B69B4D0A3A1720003C02F2 /* Build configuration list for PBXProject "example-ScreenLoggerChannel" */;
+			buildConfigurationList = E4B69B4D0A3A1720003C02F2 /* Build configuration list for PBXProject "example-MultiLoggerChannel" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -188,7 +188,7 @@
 			);
 			projectRoot = "";
 			targets = (
-				E4B69B5A0A3A1756003C02F2 /* example-ScreenLoggerChannel */,
+				E4B69B5A0A3A1756003C02F2 /* example-MultiLoggerChannel */,
 			);
 		};
 /* End PBXProject section */
@@ -227,7 +227,7 @@
 				6443523C1B6ED90700C76823 /* main.cpp in Sources */,
 				6443523D1B6ED90700C76823 /* ofApp.cpp in Sources */,
 				6470BE3E1B6EDA7D008C52C5 /* ofxScreenLoggerChannel.cpp in Sources */,
-				645A28C91BA09C8700AF6ACA /* ofxMultiLoggerChannel.cpp in Sources */,
+				645A28C51BA09C5800AF6ACA /* ofxMultiLoggerChannel.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,7 +409,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E4B69B4D0A3A1720003C02F2 /* Build configuration list for PBXProject "example-ScreenLoggerChannel" */ = {
+		E4B69B4D0A3A1720003C02F2 /* Build configuration list for PBXProject "example-MultiLoggerChannel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E4B69B4E0A3A1720003C02F2 /* Debug */,
@@ -418,7 +418,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E4B69B5F0A3A1757003C02F2 /* Build configuration list for PBXNativeTarget "example-ScreenLoggerChannel" */ = {
+		E4B69B5F0A3A1757003C02F2 /* Build configuration list for PBXNativeTarget "example-MultiLoggerChannel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E4B69B600A3A1757003C02F2 /* Debug */,
