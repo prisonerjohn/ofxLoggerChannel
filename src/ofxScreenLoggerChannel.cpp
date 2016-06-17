@@ -214,6 +214,6 @@ void ofxScreenLoggerChannel::mouseMoved(ofMouseEventArgs& args)
 void ofxScreenLoggerChannel::mouseScrolled(ofMouseEventArgs& args)
 {
     if (_bMouseInside) {
-        _scrollOffset = MAX(0, MIN(_scrollOffset - round(args.y), _buffer.size() - 1));
+        _scrollOffset = MAX(0, MIN(_scrollOffset - round(args.scrollY), _buffer.size() - 1));
     }
 }
